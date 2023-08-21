@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Public+Sans:wght@200&family=Quicksand&family=Raleway:wght@300&family=Wix+Madefor+Display&display=swap");
+@import url("https://db.onlinewebfonts.com/c/bb2e1211dfd31103079dbce7c49e1d4e?family=DIN+Neuzeit+Grotesk+LT+W01+BdCn");
+html {
+  font-family: "Montserrat";
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+.nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0rem;
+  /* height: 60px; */
+  margin: 0.5rem 4rem;
+  background-color: #fff;
+  transition: position 0.3s ease-in-out;
+}
+.nav .start {
+  display: flex;
+}
+.nav .start img {
+  height: 3rem;
+  aspect-ratio: 16/10;
+}
+.nav .start button {
+  background: none;
+  border: none;
+  color: black;
+  padding-left: 1rem;
+}
+.nav .start input {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  width: 40%;
+  padding: 1rem 0;
+  font-family: "Montserrat";
+}
+.nav .start input::placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat";
+}
+.nav .end {
+  display: flex;
+  flex-direction: row;
+}
+.nav .end button {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  color: #121212;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  /* padding: 1rem; */
+}
+.nav .end a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav .end .login {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.nav .end .login button {
+  padding: 0;
+}
+.nav .end .login button:first-child:hover {
+  color: black;
+}
+.nav .end .login button:nth-child(2):hover {
+  color: gray;
+}
+/* .nav .end button:last-child:hover{
+  color: rgb(42, 41, 41);
+} */
+.nav .end button:hover {
+  color: orangered;
+}
+.main {
+  padding: 0 4rem;
+  padding-bottom: 2.5rem;
+}
+.main .upper {
+  background: #ff6200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem 0rem;
+}
+.main .upper .text {
+  padding: 3rem 0;
+  padding-bottom: 1rem;
+  font-family: "DIN Neuzeit Grotesk LT W01 BdCn";
+}
+.main .upper .text h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-size: 4rem;
+  margin: 0;
+}
+.main .upper .text h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+.main .upper .btns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem 0;
+}
+.main .upper .btns button {
+  text-transform: capitalize;
+  background: #ff6200;
+  border: #fff 2.3px solid;
+  color: #fff;
+  font-size: 1rem;
+  width: 14.125rem;
+  height: 2.75rem;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+.main .upper .btns button:hover {
+  color: #ff6200;
+  background: #fff;
+}
+.main .imgs {
+  position: relative;
+  margin: 0.5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 32.3125rem;
+  gap: 1.25rem;
+}
+.main .imgs .ii {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main .imgs .ii img {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.main .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .head h1 {
+  margin: 3rem;
+  padding: 0;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff6200;
+}
+.main .head p {
+  margin: 2rem;
+  margin-top: 0rem;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  /* border-bottom: 3px solid #ff6200; */
+}
+.main .products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.main .products .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main .product a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main .products .card .i {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 24.125rem;
+}
+.main .products .card .i img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 9/16;
+}
+.main .products .card .t {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem;
+}
+.main .products .card .t p {
+  margin: 0.2rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #121212;
+  text-transform: capitalize;
+}
+.main .products .card .t p:last-child {
+  color: #ff6200;
+}
+.main .all {
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .all button {
+  text-transform: capitalize;
+  border: #ff6200 2.3px solid;
+  color: #ff6200;
+  background: none;
+  font-size: 1rem;
+  width: 14.125rem;
+  height: 2.75rem;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+.main .all button:hover {
+  background: #ff6200;
+  color: #fff;
+}
+.main .footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  padding: 2.5em 0;
+}
+.main .footer .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 2.5rem;
+}
+.main .footer .links p {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 550;
+}
+.main .footer .socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+}
+.main .footer .socials p {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 550;
+}
+.aside {
+  position: fixed;
+  top: 4rem;
+  left: 96%;
+  height: 36rem;
+  /* background-color: #121212; */
+  z-index: 88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+}
+.aside .icons a {
+  display: flex;
+  text-decoration: none;
+  color: #121212;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.cardd {
+  margin: 1rem;
+  padding: 1rem 10rem;
+  height: 40rem;
+  overflow: hidden;
+}
+.cardd .navv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.cardd .navv button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+.cardd .con {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cardd .con img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.cardd .con .text {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.cardd .con .text p {
+  margin: 0.5rem 0;
+}
+.cardd .con .text .dd {
+  /* background-color: #121212; */
+  height: 2.5rem;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.cardd .con .text .dd input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #928f8d;
+  width: 80%;
+  font-family: "Montserrat";
+  border: 1px silver solid;
+  border-right: none;
+  text-transform: capitalize;
+}
+.cardd .con .text .dd input:focus {
+  /* border: 1px silver solid;/ */
+  border-right: none;
+  outline: none;
+}
+.cardd .con .text .option_box {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  max-height: fit-content;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border: 1px silver;
+  padding: 0.3rem 1rem;
+}
+.cardd .con .text .option_box input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-size: "Montserrat";
+  border: none;
+  outline: none;
+  color: #928f8d;
+}
+.cardd .con .text .qty {
+  width: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.cardd .con .text .qty button {
+  background: #e5e2e0;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cardd .con .text .qty input {
+  text-align: center;
+  font-family: "Montserrat";
+}
+.cardd .con .text .dd button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: none;
+  color: #928f8d;
+  font-family: "Montserrat";
+  border: 1px silver solid;
+  border-left: none;
+}
+.cardd .con .text .bbtn {
+  width: 70%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.cardd .con .text .bbtn button {
+  padding: 0.4rem 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  background: #121212;
+}
+.cardd .con .text .bbtn button:first-child {
+  background: #ff6200;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vw;
+  width: 0;
+  /* background-color: #121212; */
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.4s ease-in-out;
+}
+.cart .up {
+  height: 4rem;
+  color: #fff;
+  background: #121212;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cart .up h1 {
+  width: 100%;
+  text-align: center;
+}
+.cart .up button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+.cart .low {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  height: 90vh;
+  overflow-y: scroll;
+  background: #fff;
+  /* padding: 1rem; */
+  /* display: flex; */
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cart .low::-webkit-scrollbar {
+  display: none;
+}
+.main .abox {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.main .abox .tt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+.main .abox .tt p {
+  font-size: 1rem;
+  text-align: justify;
+  text-transform: none;
+}
+.main .abox .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main .abox .img img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+.nav .start .sbox {
+  position: absolute;
+  top: 4rem;
+  background-color: #fff;
+  left: 6%;
+  width: 15rem;
+  height: 25rem;
+  z-index: 1000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
+  padding: 1rem;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav .start .sbox::-webkit-scrollbar {
+  display: none;
+}
+.nav .start .sbox .se {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 2rem;
+  height: 100%;
+}
+.nav .start .sbox .se:hover {
+  background: #f6f6f6;
+}
+.nav .start .sbox a {
+  text-decoration: none;
+  color: #121212;
+}
+.nav .start .sbox .se .img {
+  position: relative;
+  height: 100%;
+}
+.nav .start .sbox .se .img img {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+.nav .start .sbox .se .tr {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav .start .sbox .se .tr p {
+  text-transform: capitalize;
+}
+.signup {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* background: #ff6200; */
+}
+
+.signup .child {
+  position: relative;
+  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 30rem;
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+.signup .child .ttt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e5e2e0;
+  border-radius: 15px 0 0 15px;
+  gap: 1rem;
+}
+.signup .child .ttt input {
+  padding: 0.5rem;
+  width: 70%;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #121212;
+  border-radius: 8px;
+}
+.signup .child .ttt input::placeholder {
+  text-transform: capitalize;
+  /* padding-left: 0.5rem ; */
+}
+.signup .child .ttt h2 {
+  color: #121212;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: #121212 2px solid;
+}
+.signup .child .ttt input:focus {
+  border: none;
+  outline: none;
+}
+.signup .child .ttt button {
+  width: 70%;
+  padding: 0.6rem 0;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  background-color: #ff6200;
+  border: none;
+}
+.signup .child .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.signup .child .image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 15px 15px 0;
+}
+.head img {
+  position: relative;
+  height: 12rem;
+  aspect-ratio: 16/10;
+}
+.cart_flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 90%;
+  height: 6rem;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.cart_flex:hover {
+  background: #e5e2e0;
+}
+.cart_flex img {
+  /* background: none; */
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.cart_flex .text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.cart_flex .text h2 {
+  margin: 0;
+  text-transform: capitalize;
+}
+.cart_flex .text p {
+  margin: 0;
+}
+.cart_flex button {
+  border: none;
+  background: none;
+  color: red;
+}
+.Sub_Total {
+  position: fixed;
+  bottom: 1rem;
+  z-index: 100;
+  width: 22rem;
+  /* height: 2rem; */
+  padding: 0.4rem 1rem;
+  background-color: #121212;
+}
+.Sub_Total p {
+  color: #fff;
+}
+.cardd .con .text .cartPop {
+  position: absolute;
+  bottom: 20%;
+  width: 100vw;
+  display: none;
+  background-color: #f6f6f6;
+  flex-direction: row;
+  gap: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+}
+.cardd .con .text .cartPop button {
+  background: none;
+  border: none;
+  color: red;
+}
+.signout {
+  position: fixed;
+  top: 4rem;
+  right: 5rem;
+  height: 4rem;
+  width: 8rem;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+}
+.signout button{
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: red;
+}
+@media screen and (min-width: 768px) and (max-width: 1192px) {
+  .main .products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .main .products .card {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .main .products .card {
+    height: 250px;
+  }
+}
